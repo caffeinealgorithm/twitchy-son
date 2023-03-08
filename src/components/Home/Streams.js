@@ -12,6 +12,7 @@ class Streams extends Component<*, *> {
         <Link to={`/streams/${stream.channel._id}`}>
           <Card centered>
             <Image src={stream.preview.large} />
+
             <Card.Content>
               <Card.Header>{stream.channel.display_name}</Card.Header>
               <Card.Meta>
@@ -19,6 +20,7 @@ class Streams extends Component<*, *> {
               </Card.Meta>
               <Card.Description>{stream.channel.status}</Card.Description>
             </Card.Content>
+
             <Card.Content extra>
               <Icon name="user" />
               {`${stream.viewers} Viewers`}
@@ -35,6 +37,7 @@ class Streams extends Component<*, *> {
         <Header as="h2" inverted>
           {"The streams you're looking for will appear down here (I promise)."}
         </Header>
+
         <Grid columns={3}>{this.loadStreams()}</Grid>
       </Fragment>
     );

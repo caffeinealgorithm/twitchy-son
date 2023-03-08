@@ -33,6 +33,7 @@ const App = () => (
       <Fragment>
         <Meta />
         <GlobalStyle />
+
         <Content>
           <Header as="h2" icon inverted textAlign="center">
             <Link to="/">
@@ -47,6 +48,7 @@ const App = () => (
           </Header>
           <Divider />
         </Content>
+
         <Route exact path="/" component={Home} />
         <Route exact path="/streams/:channelId" component={Stream} />
       </Fragment>

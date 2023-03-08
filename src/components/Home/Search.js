@@ -86,6 +86,7 @@ class Search extends Component<*, *> {
           onChange={this.setQuery}
           fluid
         />
+
         <Status serviceStatus={serviceStatus} errorMessage={errorMessage} />
       </Fragment>
     );

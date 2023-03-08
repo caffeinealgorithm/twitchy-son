@@ -39,6 +39,7 @@ class Stream extends Component<*, *> {
             "If you've time, I will let you watch this whole stream (that's not really good for you health)."
           }
         </EditedHeader>
+
         <Embed
           active
           url={`https://player.twitch.tv/?channel=${displayName}`}
@@ -46,9 +47,11 @@ class Stream extends Component<*, *> {
             allowFullScreen: true
           }}
         />
+
         <Header as="h2" attached="top">
           {title}
         </Header>
+
         <Segment attached>{description}</Segment>
         <Segment attached>
           <Icon name="user" />
